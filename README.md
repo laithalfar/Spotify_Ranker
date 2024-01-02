@@ -44,6 +44,12 @@
   5. Track Retrieval: Retrieve tracks from the selected album.
   6. Likeability Score Calculation: Evaluate albums based on audio features.
 
+  ![Main page showing search bar](Ranker.png)
+
+  ![Choosing between the top 4 search results](Choosing_Artist.png)
+
+  ![Artist's albums ranked in descending order](Albums_Ranked.png)
+
   ## Limitations
   The limitation of the process is the rate limit where there is a limit to the amount of times a user can do the requests and if the user uses the program too many times it stops. That is however not a big problem since this is a small program for now and has only one user(the developer). However, a prevention method was inserted in the code nonetheless where if the request returns a `429 error` (which is a rate limit) it does a `retry-after` function. A `retry-after` function retrys a function after a certain amount of time if it does not succeed the first time, the time set for the repetition is 100000 seconds.
 
